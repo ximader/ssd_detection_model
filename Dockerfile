@@ -23,6 +23,7 @@ RUN pip3 install torch torchvision torchaudio
 
 # install other stuff to prevent ImportError: libGL.so.1: 
 RUN apt-get update && apt-get install ffmpeg libsm6 libxext6  -y
+RUN apt install dos2unix
 
 
 # set up folders
@@ -32,6 +33,7 @@ COPY . /app
 # Install other stuff
 RUN pip install -r requirements.txt
 
+RUN dos2unix run.sh
 
 # autostart
 #ENTRYPOINT ["python", "train.py"]
