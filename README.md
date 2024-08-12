@@ -26,6 +26,13 @@ http://images.cocodataset.org/zips/val2017.zip
 
 **Сборка и запуск образа Docker**
 
+Загрузка проекта
+
+```bash
+git clone https://github.com/ximader/ssd_detection_model.git
+cd ssd_detection_model
+```
+
 Сборка проекта
 
 ```bash
